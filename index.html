@@ -74,7 +74,7 @@
   .hero-grid{ display: grid; grid-template-columns: 1.3fr 0.9fr; gap: 48px; align-items: center; }
   .hero h1{ font-size: clamp(2.1rem, 4.2vw, 3.4rem); line-height: 1.15; font-weight: 700; margin-bottom: 18px; }
   .hero h1 .accent{ color: var(--text-dim); }
-  .hero p.lead{ color: var(--text-dim); font-size: 1.05rem; max-width: 52ch; margin-bottom: 30px; }
+  .hero p.lead{ color: var(--text-dim); font-size: 1.05rem; max-width: 52ch; margin-bottom: 22px; }
   .hero-actions{ display: flex; gap: 14px; flex-wrap: wrap; }
   .btn{
     display: inline-flex; align-items: center; gap: 8px;
@@ -128,6 +128,26 @@
   .id-address{ margin-top: 6px; padding-top: 12px; border-top: 1px dashed var(--line); }
   .id-address .k{ display: block; color: var(--text-dim); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
   .id-address .v{ font-weight: 500; font-size: 0.82rem; line-height: 1.55; }
+
+  /* Role box (interested positions) */
+  .role-box{
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 26px; padding: 14px 18px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); width: fit-content;
+  }
+  .role-box .role-label{
+    font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .role-box .role-tags{ display: flex; gap: 8px; flex-wrap: wrap; }
+  .role-tag{
+    font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; font-weight: 600;
+    padding: 6px 14px; background: var(--black); color: #FFFFFF;
+    border-radius: 100px; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .role-tag::before{ content: ""; width: 6px; height: 6px; border-radius: 50%; background: #FFFFFF; }
 
   /* ---------- SECTIONS ---------- */
   section{ padding: 80px 0; border-top: 1px solid var(--line); }
@@ -415,7 +435,16 @@
       <div class="eyebrow hero-anim">Portfolio</div>
       <h1 class="hero-anim d1">Apornphat Panchang</h1>
       <p class="hero-anim d2" style="font-family:'JetBrains Mono', monospace; font-size:0.95rem; color: var(--text-dim); margin: -8px 0 18px;">Computer Science Student</p>
-      <p class="lead hero-anim d3">Looking for job opportunities. Always open to learning new things — technology, skills, or work experience I haven't tried before.</p>
+      <p class="lead hero-anim d3">Aspiring Data Analyst & AI Engineer, passionate about turning data into 
+        meaningful insights. Currently open to internship and job opportunities, and always excited to explore new technologies, 
+        skills, and experiences along the way.</p>
+      <div class="role-box hero-anim d3">
+        <span class="role-label">Applying for</span>
+        <div class="role-tags">
+          <span class="role-tag">Data Analyst</span>
+          <span class="role-tag">AI Engineer</span>
+        </div>
+      </div>
     </div>
     <div class="id-card hero-anim d4">
       <div class="id-photo">
@@ -440,9 +469,12 @@
 
     <div class="about-intro" data-reveal style="max-width: 70ch; margin-bottom: 12px;">
       <p>
-        Currently studying Computer Science at the School of Information Technology and Innovation, Bangkok University.
-        Hands-on experience with IoT and mobile app development through class projects, including an IoT-based focus
-        monitoring system and a vocabulary app powered by AI for pronunciation and example sentence generation.
+        A Computer Science student passionate about Data Analyst and AI Engineer roles, focused on analyzing data and 
+        designing creative solutions to real-world problems. Experienced in developing 5 projects spanning Mobile Application, 
+        AI, and IoT domains — building systems that process sensor data, images, and numerical data using Python, C#, and C++, 
+        through techniques including Machine Learning, Rule-based Systems, and Generative AI. These systems deliver fast, accurate, 
+        and easy-to-understand results tailored to each user group's needs. Eager to pursue internship opportunities as a 
+        Data Analyst or AI Engineer to continuously grow and build on my knowledge in the technology field.
       </p>
     </div>
 
@@ -893,7 +925,6 @@
         <div class="t-date">21 พ.ค. 2569</div>
         <div>
           <div class="t-title">IT Empowering Day in the Era of AI</div>
-          <div class="t-org">ตัวแทนจัดบูทเผยแพร่ความรู้เกี่ยวกับวิชาโปรเจกต์</div>
           <div class="t-desc">เป็นตัวแทนไปจัดบูทเผยแพร่ความรู้เกี่ยวกับวิชาโปรเจกต์ และเข้าร่วมงานเพื่อเรียนรู้การประยุกต์ใช้ปัญญาประดิษฐ์ในการทำงานจริง ทั้งด้านการพัฒนาซอฟต์แวร์ การแก้ปัญหาทางธุรกิจ และแนวโน้มของอุตสาหกรรมเทคโนโลยีในอนาคต พร้อมพบปะบริษัทชั้นนำในกิจกรรม Mini Job Fair เพื่อสร้างเครือข่ายและเตรียมความพร้อมสำหรับการประกอบอาชีพด้านเทคโนโลยี</div>
           <div class="t-shot-row">
             <div class="t-shot"><img src="ITEmpowering-1.jpg" alt="IT Empowering Day in the Era of AI 1"></div>
